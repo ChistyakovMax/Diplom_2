@@ -1,4 +1,4 @@
-package org.example;
+package site.stellarburgers;
 
 public class Main {
     public static void main(String[] args) {
