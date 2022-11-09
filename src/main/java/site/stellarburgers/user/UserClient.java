@@ -2,6 +2,7 @@ package site.stellarburgers.user;
 
 import io.qameta.allure.Step;
 import site.stellarburgers.config.BaseClient;
+import org.junit.Assert;
 
 public class UserClient extends BaseClient {
 
@@ -34,13 +35,10 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Cоздать пользователя и не заполнить одно из обязательных полей")
-    public void createInvalid2(User user){
-        String[] invalids = {"email", "password", "name"};
-        User invalidUser;
-        for (String field : invalids){
-            invalidUser = initializeInvalid(user,field);
-
-        }
+    public void createWithNullField(User user, String field){
+        user = initializeInvalid(user, field);
+        String msg = createInvalid(user);
+        Assert.assertEquals("Email, password and name are required fields", msg);
     }
 
     @Step("Инициализировать невалидного пользователя")

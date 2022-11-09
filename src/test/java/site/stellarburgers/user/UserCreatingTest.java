@@ -25,13 +25,18 @@ public class UserCreatingTest extends UserBaseTest {
     @Test
     @DisplayName("Создать пользователя с полем email == null")
     public void createUserWithNullEmailReturn403() {
-        String[] invalids = {"email", "password", "name"};
-        User invalidUser;
-        for (String field : invalids) {
-            invalidUser = userClient.initializeInvalid(user, field);
-            String msg = userClient.createInvalid(invalidUser);
-            Assert.assertEquals("Email, password and name are required fields", msg);
-        }
+        userClient.createWithNullField(user, "email");
     }
 
+    @Test
+    @DisplayName("Сздать пользователя с полем password == null")
+    public void createUserWithNullPasswordReturn403(){
+        userClient.createWithNullField(user, "password");
+    }
+
+    @Test
+    @DisplayName("Создать пользоваеля с полем name == null")
+    public void createUserWithNullNameField(){
+        userClient.createWithNullField(user, "name");
+    }
 }
