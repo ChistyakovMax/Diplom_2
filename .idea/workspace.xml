@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="createUserWithNullEmailReturn403 test add">
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="createUserWithNullFieldsReturn403 tests add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserCreds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" afterDir="false" />
     </list>
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,55 +53,7 @@
       <recent name="site.stellarburgers.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserCreatingTest.createUserWithNullNameField">
-    <configuration name="UserCreatingTest.createUserExistsReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="createUserExistsReturn403" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCreatingTest.createUserValidDataUserCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="createUserValidDataUserCreated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCreatingTest.createUserWithNullEmailReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="createUserWithNullEmailReturn403" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserLoginTest.loginInvalidUserReturn401">
     <configuration name="UserCreatingTest.createUserWithNullNameField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
@@ -117,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCreatingTest.createUserWithNullPasswordReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserLoginTest.LoginExistingUserSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +79,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="createUserWithNullPasswordReturn403" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserLoginTest" />
+      <option name="METHOD_NAME" value="LoginExistingUserSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLoginTest.loginExistingUserSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserLoginTest" />
+      <option name="METHOD_NAME" value="loginExistingUserSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLoginTest.loginInvalidUserReturn401" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserLoginTest" />
+      <option name="METHOD_NAME" value="loginInvalidUserReturn401" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLoginTest.loginInvalidUserReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserLoginTest" />
+      <option name="METHOD_NAME" value="loginInvalidUserReturn403" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserLoginTest.loginInvalidUserReturn401" />
+        <item itemvalue="JUnit.UserLoginTest.loginInvalidUserReturn403" />
+        <item itemvalue="JUnit.UserLoginTest.loginExistingUserSuccess" />
+        <item itemvalue="JUnit.UserLoginTest.LoginExistingUserSuccess" />
         <item itemvalue="JUnit.UserCreatingTest.createUserWithNullNameField" />
-        <item itemvalue="JUnit.UserCreatingTest.createUserWithNullPasswordReturn403" />
-        <item itemvalue="JUnit.UserCreatingTest.createUserWithNullEmailReturn403" />
-        <item itemvalue="JUnit.UserCreatingTest.createUserExistsReturn403" />
-        <item itemvalue="JUnit.UserCreatingTest.createUserValidDataUserCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668004338831</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="createUserWithNullFieldsReturn403 tests add">
+      <created>1668005662527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668005662527</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +207,7 @@
     <MESSAGE value="User add" />
     <MESSAGE value="UserCreatingTest add" />
     <MESSAGE value="createUserWithNullEmailReturn403 test add" />
-    <option name="LAST_COMMIT_MESSAGE" value="createUserWithNullEmailReturn403 test add" />
+    <MESSAGE value="createUserWithNullFieldsReturn403 tests add" />
+    <option name="LAST_COMMIT_MESSAGE" value="createUserWithNullFieldsReturn403 tests add" />
   </component>
 </project>

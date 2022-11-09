@@ -30,13 +30,13 @@ public class UserCreatingTest extends UserBaseTest {
 
     @Test
     @DisplayName("Сздать пользователя с полем password == null")
-    public void createUserWithNullPasswordReturn403(){
+    public void createUserWithNullPasswordReturn403() {
         userClient.createWithNullField(user, "password");
     }
 
     @Test
     @DisplayName("Создать пользоваеля с полем name == null")
-    public void createUserWithNullNameField(){
+    public void createUserWithNullNameField() {
         userClient.createWithNullField(user, "name");
     }
 }

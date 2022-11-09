@@ -6,7 +6,10 @@ import org.junit.Assert;
 
 public class UserClient extends BaseClient {
 
-    private final String REGISTER = "/auth/register";
+    private final String AUTH = "/auth";
+    private final String REGISTER = AUTH + "/register";
+
+    private final String LOGIN = AUTH + "/login";
 
     @Step("Создание пользователя")
     public boolean create(User user) {
@@ -57,6 +60,32 @@ public class UserClient extends BaseClient {
             default:
                 return user;
         }
+    }
+
+    @Step("Логин под валидным пользователем")
+    public boolean loginExisting(UserCreds userCreds){
+        return getSpec()
+                .body(userCreds)
+                .when()
+                .post(LOGIN)
+                .then().log().all()
+                .assertThat()
+                .statusCode(200)
+                .extract()
+                .path("success");
+    }
+
+    @Step("Логин с невалидными кредами")
+    public String loginInvalid(UserCreds userCreds){
+        return getSpec()
+                .body(userCreds)
+                .when()
+                .post(LOGIN)
+                .then().log().all()
+                .assertThat()
+                .statusCode(401)
+                .extract()
+                .path("message");
     }
 
 }
