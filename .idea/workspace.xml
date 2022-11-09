@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="User add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/Ex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserBaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" afterDir="false" />
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="UserCreatingTest add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/Fields.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -52,7 +52,23 @@
       <recent name="site.stellarburgers.user" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserCreatingTest.createUserWithNullEmailReturn403">
+    <configuration name="UserCreatingTest.createUserExistsReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
+      <option name="METHOD_NAME" value="createUserExistsReturn403" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserCreatingTest.createUserValidDataUserCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
@@ -69,8 +85,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserCreatingTest.createUserWithNullEmailReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
+      <option name="METHOD_NAME" value="createUserWithNullEmailReturn403" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserCreatingTest.createUserWithNullEmailReturn403" />
+        <item itemvalue="JUnit.UserCreatingTest.createUserExistsReturn403" />
         <item itemvalue="JUnit.UserCreatingTest.createUserValidDataUserCreated" />
       </list>
     </recent_temporary>
@@ -98,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667848576990</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UserCreatingTest add">
+      <created>1667997734799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667997734799</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="User add" />
-    <option name="LAST_COMMIT_MESSAGE" value="User add" />
+    <MESSAGE value="UserCreatingTest add" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserCreatingTest add" />
   </component>
 </project>
