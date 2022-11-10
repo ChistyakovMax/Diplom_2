@@ -1,6 +1,7 @@
 package site.stellarburgers.user;
 
 import io.qameta.allure.Step;
+import io.restassured.response.ValidatableResponse;
 import site.stellarburgers.config.BaseClient;
 import org.junit.Assert;
 
@@ -8,20 +9,19 @@ public class UserClient extends BaseClient {
 
     private final String AUTH = "/auth";
     private final String REGISTER = AUTH + "/register";
-
     private final String LOGIN = AUTH + "/login";
 
+    private final String USER = AUTH + "/user";
+
     @Step("Создание пользователя")
-    public boolean create(User user) {
+    public ValidatableResponse create(User user) {
         return getSpec()
                 .body(user)
                 .when()
                 .post(REGISTER)
                 .then().log().all()
                 .assertThat()
-                .statusCode(200)
-                .extract()
-                .path("success");
+                .statusCode(200);
     }
 
     @Step("Cоздать пользователя, который уже зарегистрирован")
@@ -86,6 +86,17 @@ public class UserClient extends BaseClient {
                 .statusCode(401)
                 .extract()
                 .path("message");
+    }
+
+    @Step("Удалить пользователя")
+    public void delete(String accessToken){
+        getSpec()
+                .header("Authorization", accessToken)
+                .when()
+                .delete(USER)
+                .then().log().all()
+                .assertThat()
+                .statusCode(202);
     }
 
 }

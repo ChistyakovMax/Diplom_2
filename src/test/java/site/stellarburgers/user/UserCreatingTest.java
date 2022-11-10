@@ -1,6 +1,7 @@
 package site.stellarburgers.user;
 
 import io.qameta.allure.junit4.DisplayName;
+import io.restassured.response.ValidatableResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,14 +11,19 @@ public class UserCreatingTest extends UserBaseTest {
     @Test
     @DisplayName("Cоздать уникального пользователя")
     public void createUserValidDataUserCreated() {
-        boolean isSuccess = userClient.create(user);
+        ValidatableResponse response = userClient.create(user);
+        accessToken = response.extract().path("accessToken");
+
+        boolean isSuccess = response.extract().path("success");
         Assert.assertTrue(isSuccess);
     }
 
     @Test
     @DisplayName("Cоздать пользователя, который уже зарегистрирован")
     public void createUserExistsReturn403() {
-        userClient.create(user);
+        ValidatableResponse response = userClient.create(user);
+        accessToken = response.extract().path("accessToken");
+
         String msg = userClient.createInvalid(user);
         Assert.assertEquals("User already exists", msg);
     }

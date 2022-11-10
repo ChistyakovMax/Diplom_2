@@ -8,6 +8,8 @@ public class UserBaseTest {
 
     UserClient userClient;
 
+    String accessToken;
+
     @Before
     public void setUp(){
         user = User.gerRandomUser();
@@ -16,7 +18,9 @@ public class UserBaseTest {
 
     @After
     public void tearDown(){
-
+        if (accessToken != null){
+            userClient.delete(accessToken);
+        }
     }
 
 }
