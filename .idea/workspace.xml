@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="createUserWithNullFieldsReturn403 tests add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserCreds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserLoginTest.java" afterDir="false" />
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="Login tests add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/order/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/order/OrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/OrderBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/OrderCreatingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserCreatingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/Ex.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,50 +55,50 @@
       <recent name="site.stellarburgers.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserLoginTest.loginInvalidUserReturn401">
-    <configuration name="UserCreatingTest.createUserWithNullNameField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderCreatingTest.test">
+    <configuration name="OrderCreatingTest.CreateWithoutIngredientsReturn400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="createUserWithNullNameField" />
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.OrderCreatingTest" />
+      <option name="METHOD_NAME" value="CreateWithoutIngredientsReturn400" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserLoginTest.LoginExistingUserSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderCreatingTest.createWithInvalidHashReturn500" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserLoginTest" />
-      <option name="METHOD_NAME" value="LoginExistingUserSuccess" />
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.OrderCreatingTest" />
+      <option name="METHOD_NAME" value="createWithInvalidHashReturn500" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserLoginTest.loginExistingUserSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderCreatingTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserLoginTest" />
-      <option name="METHOD_NAME" value="loginExistingUserSuccess" />
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.OrderCreatingTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderCreatingTest.test" />
+        <item itemvalue="JUnit.OrderCreatingTest.createWithInvalidHashReturn500" />
+        <item itemvalue="JUnit.OrderCreatingTest.CreateWithoutIngredientsReturn400" />
         <item itemvalue="JUnit.UserLoginTest.loginInvalidUserReturn401" />
         <item itemvalue="JUnit.UserLoginTest.loginInvalidUserReturn403" />
-        <item itemvalue="JUnit.UserLoginTest.loginExistingUserSuccess" />
-        <item itemvalue="JUnit.UserLoginTest.LoginExistingUserSuccess" />
-        <item itemvalue="JUnit.UserCreatingTest.createUserWithNullNameField" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668005662527</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Login tests add">
+      <created>1668024988979</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668024988979</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +217,7 @@
     <MESSAGE value="UserCreatingTest add" />
     <MESSAGE value="createUserWithNullEmailReturn403 test add" />
     <MESSAGE value="createUserWithNullFieldsReturn403 tests add" />
-    <option name="LAST_COMMIT_MESSAGE" value="createUserWithNullFieldsReturn403 tests add" />
+    <MESSAGE value="Login tests add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login tests add" />
   </component>
 </project>
