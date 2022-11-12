@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+@DisplayName("Логин пользователя")
 public class UserLoginTest extends UserBaseTest {
     UserCreds userCreds;
 

@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
+@DisplayName("Изменение данных пользователя")
 public class UserChangeDataParamTest extends UserBaseTest{
 
     private final String changedField;

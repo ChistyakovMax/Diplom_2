@@ -5,7 +5,7 @@ import io.restassured.response.ValidatableResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
-//Создание пользователя
+@DisplayName("Создание пользователя")
 public class UserCreatingTest extends UserBaseTest {
 
     @Test
