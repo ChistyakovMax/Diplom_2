@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="User delete add">
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="order creating with auth test add">
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/GetOrdersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/order/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/order/OrderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/user/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/OrderBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/OrderBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/OrderCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/OrderCreatingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserBaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,59 @@
       <recent name="site.stellarburgers.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderCreatingTest">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GetOrdersTest">
+    <configuration name="GetOrdersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.GetOrdersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrdersTest.getOrdersAuthorizedReturnSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.GetOrdersTest" />
+      <option name="METHOD_NAME" value="getOrdersAuthorizedReturnSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrdersTest.getOrdersUnauthorizedReturn403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.GetOrdersTest" />
+      <option name="METHOD_NAME" value="getOrdersUnauthorizedReturn403" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderCreatingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
@@ -84,60 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCreatingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCreatingTest.createUserValidDataUserCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="createUserValidDataUserCreated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCreatingTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserCreatingTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GetOrdersTest" />
+        <item itemvalue="JUnit.GetOrdersTest.getOrdersAuthorizedReturnSuccess" />
         <item itemvalue="JUnit.OrderCreatingTest" />
         <item itemvalue="JUnit.OrderCreatingTest.createWithAuthorizationSuccess" />
-        <item itemvalue="JUnit.UserCreatingTest" />
-        <item itemvalue="JUnit.UserCreatingTest.test" />
-        <item itemvalue="JUnit.UserCreatingTest.createUserValidDataUserCreated" />
+        <item itemvalue="JUnit.GetOrdersTest.getOrdersUnauthorizedReturn403" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668108789567</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="order creating with auth test add">
+      <created>1668251633371</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668251633371</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +246,7 @@
     <MESSAGE value="Login tests add" />
     <MESSAGE value="Order tests add" />
     <MESSAGE value="User delete add" />
-    <option name="LAST_COMMIT_MESSAGE" value="User delete add" />
+    <MESSAGE value="order creating with auth test add" />
+    <option name="LAST_COMMIT_MESSAGE" value="order creating with auth test add" />
   </component>
 </project>

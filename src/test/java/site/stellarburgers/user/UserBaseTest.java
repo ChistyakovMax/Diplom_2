@@ -12,7 +12,7 @@ public class UserBaseTest {
 
     @Before
     public void setUp(){
-        user = User.gerRandomUser();
+        user = User.getRandomUser();
         userClient = new UserClient();
     }
 

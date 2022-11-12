@@ -17,7 +17,7 @@ public class User {
         this.name = name;
     }
 
-    public static User gerRandomUser() {
+    public static User getRandomUser() {
         return new User(
                 RandomStringUtils.randomAlphanumeric(10) + "@gmail.com",
                 "P@ssw0rd",

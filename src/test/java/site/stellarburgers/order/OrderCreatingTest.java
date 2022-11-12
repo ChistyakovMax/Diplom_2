@@ -3,22 +3,14 @@ package site.stellarburgers.order;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Test;
-import site.stellarburgers.user.User;
-import site.stellarburgers.user.UserClient;
 
 public class OrderCreatingTest extends OrderBaseTest {
 
     @Test
     @DisplayName("Создание заказа с ингридиентами с авторизацией пользователя")
     public void createWithAuthorizationSuccess() {
-        User user = User.gerRandomUser();
-        UserClient userClient = new UserClient();
-
-        String accessToken = userClient.create(user).extract().path("accessToken");
-        order.setIngredients(orderClient.getRandomIngredients());
-
-        boolean isSuccess = orderClient.create(order, accessToken);
-        Assert.assertTrue(isSuccess);
+        String accessToken = OrderBaseTest.createUserAndOrder(order, orderClient, user, userClient);
+        userClient.delete(accessToken);
     }
 
     @Test

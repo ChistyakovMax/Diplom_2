@@ -81,4 +81,29 @@ public class OrderClient extends BaseClient {
                 .path("message");
     }
 
+    @Step("Получить заказ конкретного пользователя с авторизацией")
+    public boolean getOrdersWithAuth(String accessToken){
+        return getSpec()
+                .header("Authorization", accessToken)
+                .when()
+                .get(ORDERS)
+                .then().log().all()
+                .assertThat()
+                .statusCode(200)
+                .extract()
+                .path("success");
+    }
+
+    @Step("Получить заказ конкретного пользователя без авторизации")
+    public String getOrdersWithoutAuth(){
+        return getSpec()
+                .when()
+                .get(ORDERS)
+                .then().log().all()
+                .assertThat()
+                .statusCode(401)
+                .extract()
+                .path("message");
+    }
+
 }
