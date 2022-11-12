@@ -99,6 +99,29 @@ public class UserClient extends BaseClient {
                 .statusCode(202);
     }
 
+    @Step("Изменить данные пользователя с авторизацией")
+    public ValidatableResponse changeWithAuthorization(User user, String accessToken){
+        return getSpec()
+                .header("Authorization", accessToken)
+                .body(user)
+                .when()
+                .patch(USER)
+                .then().log().all()
+                .assertThat()
+                .statusCode(200);
+    }
 
+    @Step("Изменить данные пользователя без авторизации")
+    public String changeWithoutAuthorization(User user){
+        return getSpec()
+                .body(user)
+                .when()
+                .patch(USER)
+                .then().log().all()
+                .assertThat()
+                .statusCode(401)
+                .extract()
+                .path("message");
+    }
 
 }
