@@ -3,15 +3,29 @@ package site.stellarburgers.order;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Test;
+import site.stellarburgers.user.User;
+import site.stellarburgers.user.UserClient;
 
 public class OrderCreatingTest extends OrderBaseTest {
 
     @Test
-    @DisplayName("Создание заказа без авторизации с ингредиентами")
-    public void test() {
-        order.addIngredient("61c0c5a71d1f82001bdaaa6d");
-        order.addIngredient("61c0c5a71d1f82001bdaaa6f");
-        order.addIngredient("61c0c5a71d1f82001bdaaa72");
+    @DisplayName("Создание заказа с ингридиентами с авторизацией пользователя")
+    public void createWithAuthorizationSuccess() {
+        User user = User.gerRandomUser();
+        UserClient userClient = new UserClient();
+
+        String accessToken = userClient.create(user).extract().path("accessToken");
+        order.setIngredients(orderClient.getRandomIngredients());
+
+        boolean isSuccess = orderClient.create(order, accessToken);
+        Assert.assertTrue(isSuccess);
+    }
+
+    @Test
+    @DisplayName("Создание заказа с ингредиентами без авторизации пользователя")
+    public void createWithoutAuthorizationSuccess() {
+        order.setIngredients(orderClient.getRandomIngredients());
+
         boolean isSuccess = orderClient.create(order);
         Assert.assertTrue(isSuccess);
     }

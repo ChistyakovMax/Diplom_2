@@ -1,8 +1,10 @@
 package site.stellarburgers.order;
 
 import io.qameta.allure.Step;
-import io.restassured.response.ValidatableResponse;
 import site.stellarburgers.config.BaseClient;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class OrderClient extends BaseClient {
 
@@ -11,18 +13,40 @@ public class OrderClient extends BaseClient {
     private final String INGREDIENTS = "/ingredients";
 
     @Step("Получить данных об ингредиентах")
-    public ValidatableResponse getIngredients(){
-        return getSpec()
+    public List<String> getRandomIngredients(){
+        List <String> allTheIngredients = getSpec()
                 .when()
                 .get(INGREDIENTS)
                 .then().log().all()
                 .assertThat()
-                .statusCode(200);
+                .statusCode(200)
+                .extract()
+                .path("data._id");
+
+        List <String> randomIngredients = new ArrayList<>();
+        randomIngredients.add(allTheIngredients.get(1));
+        randomIngredients.add(allTheIngredients.get(2));
+        randomIngredients.add(allTheIngredients.get(3));
+        return randomIngredients;
     }
 
-    @Step("Cоздать заказа")
+    @Step("Cоздать заказ без авторизации")
     public boolean create(Order order){
         return getSpec()
+                .body(order)
+                .when()
+                .post(ORDERS)
+                .then().log().all()
+                .assertThat()
+                .statusCode(200)
+                .extract()
+                .path("success");
+    }
+
+    @Step("Cоздать заказ с авторизацией")
+    public boolean create(Order order, String accessToken){
+        return getSpec()
+                .header("Authorization", accessToken)
                 .body(order)
                 .when()
                 .post(ORDERS)
@@ -44,7 +68,7 @@ public class OrderClient extends BaseClient {
                 .statusCode(500);
     }
 
-    @Step("Cоздать заказа без ингридиентов")
+    @Step("Cоздать заказ без ингридиентов")
     public String createWithoutIngredients(Order order){
         return getSpec()
                 .body(order)
