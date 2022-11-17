@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="allure.properties changed" />
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="code style fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/GetOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/GetOrdersTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +59,7 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserChangeDataParamTest">
+  <component name="RunManager" selected="JUnit.GetOrdersTest">
     <configuration name="GetOrdersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
@@ -136,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserChangeDataParamTest" />
         <item itemvalue="JUnit.GetOrdersTest" />
+        <item itemvalue="JUnit.UserChangeDataParamTest" />
         <item itemvalue="JUnit.GetOrdersTest.getOrdersAuthorizedReturnSuccess" />
         <item itemvalue="JUnit.OrderCreatingTest" />
         <item itemvalue="JUnit.OrderCreatingTest.createWithAuthorizationSuccess" />
@@ -251,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668455189180</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="code style fixed">
+      <created>1668704717669</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668704717669</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +290,7 @@
     <MESSAGE value="allure reports add" />
     <MESSAGE value="surefire reports add" />
     <MESSAGE value="allure.properties changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="allure.properties changed" />
+    <MESSAGE value="code style fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="code style fixed" />
   </component>
 </project>
