@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="code style fixed">
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="test data deleting dragged to @After method">
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserChangeDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/GetOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/order/GetOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserChangeDataParamTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GetOrdersTest">
+  <component name="RunManager" selected="JUnit.UserChangeDataTest">
     <configuration name="GetOrdersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
@@ -91,37 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderCreatingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.OrderCreatingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderCreatingTest.createWithAuthorizationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.OrderCreatingTest" />
-      <option name="METHOD_NAME" value="createWithAuthorizationSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserChangeDataParamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <extension name="coverage">
@@ -137,13 +107,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserChangeDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserChangeDataTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserChangeDataTest.changeEmailUserAuthorisedNameChanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserChangeDataTest" />
+      <option name="METHOD_NAME" value="changeEmailUserAuthorisedNameChanged" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetOrdersTest" />
+        <item itemvalue="JUnit.UserChangeDataTest" />
+        <item itemvalue="JUnit.UserChangeDataTest.changeEmailUserAuthorisedNameChanged" />
         <item itemvalue="JUnit.UserChangeDataParamTest" />
+        <item itemvalue="JUnit.GetOrdersTest" />
         <item itemvalue="JUnit.GetOrdersTest.getOrdersAuthorizedReturnSuccess" />
-        <item itemvalue="JUnit.OrderCreatingTest" />
-        <item itemvalue="JUnit.OrderCreatingTest.createWithAuthorizationSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668704717669</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="test data deleting dragged to @After method">
+      <created>1668705152030</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668705152030</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,6 +299,7 @@
     <MESSAGE value="surefire reports add" />
     <MESSAGE value="allure.properties changed" />
     <MESSAGE value="code style fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="code style fixed" />
+    <MESSAGE value="test data deleting dragged to @After method" />
+    <option name="LAST_COMMIT_MESSAGE" value="test data deleting dragged to @After method" />
   </component>
 </project>
