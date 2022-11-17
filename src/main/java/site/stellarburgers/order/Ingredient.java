@@ -18,7 +18,8 @@ public class Ingredient {
     private String image_large;
     private int __v;
 
-    public Ingredient(String _id, String name, String type, int proteins, int fat, int carbohydrates, int calories, int price, String image, String image_mobile, String image_large, int __v) {
+    public Ingredient(String _id, String name, String type, int proteins, int fat, int carbohydrates, int calories,
+                      int price, String image, String image_mobile, String image_large, int __v) {
         this._id = _id;
         this.name = name;
         this.type = type;

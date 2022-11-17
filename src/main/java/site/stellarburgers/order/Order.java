@@ -10,7 +10,7 @@ public class Order {
 
     private List<String> ingredients = new ArrayList<>();
 
-    public void addIngredient(String ingredient){
+    public void addIngredient(String ingredient) {
         ingredients.add(ingredient);
     }
 

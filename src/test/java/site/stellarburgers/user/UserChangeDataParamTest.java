@@ -10,13 +10,11 @@ import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
 @DisplayName("Изменение данных пользователя")
-public class UserChangeDataParamTest extends UserBaseTest{
+public class UserChangeDataParamTest extends UserBaseTest {
 
     private final String changedField;
 
     private final String typeOfRequest;
-
-
 
     public UserChangeDataParamTest(String changedField, String typeOfRequest) {
         this.changedField = changedField;
@@ -24,7 +22,7 @@ public class UserChangeDataParamTest extends UserBaseTest{
     }
 
     @Parameterized.Parameters
-    public static Object[][] getTestData(){
+    public static Object[][] getTestData() {
         return new Object[][]{
                 {"email", "auth"},
                 {"name", "auth"},
@@ -40,12 +38,12 @@ public class UserChangeDataParamTest extends UserBaseTest{
 
     @Test
     @DisplayName("Изменение данных пользователя")
-    public void changeUserData(){
+    public void changeUserData() {
         //создаем юзера
         ValidatableResponse response = userClient.create(user);
         accessToken = response.extract().path("accessToken");
         //меняем поля у локального юзера
-        switch (changedField){
+        switch (changedField) {
             case ("email"):
                 user.setEmail(RandomStringUtils.randomAlphanumeric(10) + "@gmail.com");
                 break;
@@ -60,7 +58,7 @@ public class UserChangeDataParamTest extends UserBaseTest{
                 break;
         }
         //меняем поля на сервере
-        switch (typeOfRequest){
+        switch (typeOfRequest) {
             case ("auth"):
                 //меняем поля
                 ValidatableResponse responseAfterChange = userClient.changeWithAuthorization(user, accessToken);

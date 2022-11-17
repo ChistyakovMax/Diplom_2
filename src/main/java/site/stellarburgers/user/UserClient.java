@@ -25,7 +25,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Cоздать пользователя, который уже зарегистрирован")
-    public String createInvalid(User user){
+    public String createInvalid(User user) {
         return getSpec()
                 .body(user)
                 .when()
@@ -38,7 +38,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Cоздать пользователя и не заполнить одно из обязательных полей")
-    public void createWithNullField(User user, String field){
+    public void createWithNullField(User user, String field) {
         user = initializeInvalid(user, field);
         String msg = createInvalid(user);
         Assert.assertEquals("Email, password and name are required fields", msg);
@@ -63,7 +63,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Логин под валидным пользователем")
-    public boolean loginExisting(UserCreds userCreds){
+    public boolean loginExisting(UserCreds userCreds) {
         return getSpec()
                 .body(userCreds)
                 .when()
@@ -76,7 +76,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Логин с невалидными кредами")
-    public String loginInvalid(UserCreds userCreds){
+    public String loginInvalid(UserCreds userCreds) {
         return getSpec()
                 .body(userCreds)
                 .when()
@@ -89,7 +89,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Удалить пользователя")
-    public void delete(String accessToken){
+    public void delete(String accessToken) {
         getSpec()
                 .header("Authorization", accessToken)
                 .when()
@@ -100,7 +100,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Изменить данные пользователя с авторизацией")
-    public ValidatableResponse changeWithAuthorization(User user, String accessToken){
+    public ValidatableResponse changeWithAuthorization(User user, String accessToken) {
         return getSpec()
                 .header("Authorization", accessToken)
                 .body(user)
@@ -112,7 +112,7 @@ public class UserClient extends BaseClient {
     }
 
     @Step("Изменить данные пользователя без авторизации")
-    public String changeWithoutAuthorization(User user){
+    public String changeWithoutAuthorization(User user) {
         return getSpec()
                 .body(user)
                 .when()

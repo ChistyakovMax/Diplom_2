@@ -11,14 +11,14 @@ public class UserBaseTest {
     String accessToken;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         user = User.getRandomUser();
         userClient = new UserClient();
     }
 
     @After
-    public void tearDown(){
-        if (accessToken != null){
+    public void tearDown() {
+        if (accessToken != null) {
             userClient.delete(accessToken);
         }
     }

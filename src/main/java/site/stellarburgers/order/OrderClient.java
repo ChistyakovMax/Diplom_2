@@ -13,8 +13,8 @@ public class OrderClient extends BaseClient {
     private final String INGREDIENTS = "/ingredients";
 
     @Step("Получить данных об ингредиентах")
-    public List<String> getRandomIngredients(){
-        List <String> allTheIngredients = getSpec()
+    public List<String> getRandomIngredients() {
+        List<String> allTheIngredients = getSpec()
                 .when()
                 .get(INGREDIENTS)
                 .then().log().all()
@@ -23,7 +23,7 @@ public class OrderClient extends BaseClient {
                 .extract()
                 .path("data._id");
 
-        List <String> randomIngredients = new ArrayList<>();
+        List<String> randomIngredients = new ArrayList<>();
         randomIngredients.add(allTheIngredients.get(1));
         randomIngredients.add(allTheIngredients.get(2));
         randomIngredients.add(allTheIngredients.get(3));
@@ -31,7 +31,7 @@ public class OrderClient extends BaseClient {
     }
 
     @Step("Cоздать заказ без авторизации")
-    public boolean create(Order order){
+    public boolean create(Order order) {
         return getSpec()
                 .body(order)
                 .when()
@@ -44,7 +44,7 @@ public class OrderClient extends BaseClient {
     }
 
     @Step("Cоздать заказ с авторизацией")
-    public boolean create(Order order, String accessToken){
+    public boolean create(Order order, String accessToken) {
         return getSpec()
                 .header("Authorization", accessToken)
                 .body(order)
@@ -58,7 +58,7 @@ public class OrderClient extends BaseClient {
     }
 
     @Step("Создать заказ с невалидными хешами ингридиентов")
-    public void createWithInvalidHash(Order order){
+    public void createWithInvalidHash(Order order) {
         getSpec()
                 .body(order)
                 .when()
@@ -69,7 +69,7 @@ public class OrderClient extends BaseClient {
     }
 
     @Step("Cоздать заказ без ингридиентов")
-    public String createWithoutIngredients(Order order){
+    public String createWithoutIngredients(Order order) {
         return getSpec()
                 .body(order)
                 .when()
@@ -82,7 +82,7 @@ public class OrderClient extends BaseClient {
     }
 
     @Step("Получить заказ конкретного пользователя с авторизацией")
-    public boolean getOrdersWithAuth(String accessToken){
+    public boolean getOrdersWithAuth(String accessToken) {
         return getSpec()
                 .header("Authorization", accessToken)
                 .when()
@@ -95,7 +95,7 @@ public class OrderClient extends BaseClient {
     }
 
     @Step("Получить заказ конкретного пользователя без авторизации")
-    public String getOrdersWithoutAuth(){
+    public String getOrdersWithoutAuth() {
         return getSpec()
                 .when()
                 .get(ORDERS)

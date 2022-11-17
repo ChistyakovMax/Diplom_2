@@ -14,7 +14,7 @@ public class UserCreds {
         this.password = password;
     }
 
-    public static UserCreds getCreds(User user){
+    public static UserCreds getCreds(User user) {
         return new UserCreds(user.getEmail(), user.getPassword());
     }
 

@@ -9,19 +9,19 @@ public class OrderBaseTest {
 
     Order order;
 
-    OrderClient orderClient ;
+    OrderClient orderClient;
 
     User user;
 
     UserClient userClient = new UserClient();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         order = new Order();
         orderClient = new OrderClient();
     }
 
-    public static String createUserAndOrder(Order order, OrderClient orderClient, User user, UserClient userClient){
+    public static String createUserAndOrder(Order order, OrderClient orderClient, User user, UserClient userClient) {
         user = User.getRandomUser();
 
         String accessToken = userClient.create(user).extract().path("accessToken");
