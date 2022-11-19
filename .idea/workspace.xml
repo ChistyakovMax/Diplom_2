@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="">
+    <list default="true" id="d2ef171f-2efd-484e-bb92-beaea45acb22" name="Changes" comment="test data deleting dragged to @After method">
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserChangeDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/config/BaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/config/BaseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/user/UserChangeDataParamTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +17,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -35,13 +39,115 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="site.stellarburgers.user" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+      <command value="allure serve target/surefire-reports/" />
+      <command value="mvn clean test" />
+      <command value="mvn allure:serve" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserChangeDataTest">
+    <configuration name="GetOrdersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.GetOrdersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrdersTest.getOrdersAuthorizedReturnSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.order" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.order.GetOrdersTest" />
+      <option name="METHOD_NAME" value="getOrdersAuthorizedReturnSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserChangeDataParamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserChangeDataParamTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserChangeDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserChangeDataTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserChangeDataTest.changeEmailUserAuthorisedNameChanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers.user" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.user.UserChangeDataTest" />
+      <option name="METHOD_NAME" value="changeEmailUserAuthorisedNameChanged" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserChangeDataTest" />
+        <item itemvalue="JUnit.UserChangeDataTest.changeEmailUserAuthorisedNameChanged" />
+        <item itemvalue="JUnit.UserChangeDataParamTest" />
+        <item itemvalue="JUnit.GetOrdersTest" />
+        <item itemvalue="JUnit.GetOrdersTest.getOrdersAuthorizedReturnSuccess" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +157,119 @@
       <option name="presentableId" value="Default" />
       <updated>1667842548188</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1667846392388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667846392388</updated>
+    </task>
+    <task id="LOCAL-00002" summary="User add">
+      <created>1667848576990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667848576990</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UserCreatingTest add">
+      <created>1667997734799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667997734799</updated>
+    </task>
+    <task id="LOCAL-00004" summary="createUserWithNullEmailReturn403 test add">
+      <created>1668004338831</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668004338831</updated>
+    </task>
+    <task id="LOCAL-00005" summary="createUserWithNullFieldsReturn403 tests add">
+      <created>1668005662527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668005662527</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Login tests add">
+      <created>1668024988979</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668024988979</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Order tests add">
+      <created>1668104470751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668104470751</updated>
+    </task>
+    <task id="LOCAL-00008" summary="User delete add">
+      <created>1668108789567</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668108789567</updated>
+    </task>
+    <task id="LOCAL-00009" summary="order creating with auth test add">
+      <created>1668251633371</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668251633371</updated>
+    </task>
+    <task id="LOCAL-00010" summary="get orders tests add">
+      <created>1668254713055</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668254713055</updated>
+    </task>
+    <task id="LOCAL-00011" summary="change user data tests add">
+      <created>1668257238087</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668257238087</updated>
+    </task>
+    <task id="LOCAL-00012" summary="allure reports add">
+      <created>1668261143357</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668261143357</updated>
+    </task>
+    <task id="LOCAL-00013" summary="surefire reports add">
+      <created>1668261541789</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668261541789</updated>
+    </task>
+    <task id="LOCAL-00014" summary="allure.properties changed">
+      <created>1668455189180</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668455189180</updated>
+    </task>
+    <task id="LOCAL-00015" summary="code style fixed">
+      <created>1668704717669</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668704717669</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test data deleting dragged to @After method">
+      <created>1668705152030</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668705152030</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -63,5 +282,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="User add" />
+    <MESSAGE value="UserCreatingTest add" />
+    <MESSAGE value="createUserWithNullEmailReturn403 test add" />
+    <MESSAGE value="createUserWithNullFieldsReturn403 tests add" />
+    <MESSAGE value="Login tests add" />
+    <MESSAGE value="Order tests add" />
+    <MESSAGE value="User delete add" />
+    <MESSAGE value="order creating with auth test add" />
+    <MESSAGE value="get orders tests add" />
+    <MESSAGE value="change user data tests add" />
+    <MESSAGE value="allure reports add" />
+    <MESSAGE value="surefire reports add" />
+    <MESSAGE value="allure.properties changed" />
+    <MESSAGE value="code style fixed" />
+    <MESSAGE value="test data deleting dragged to @After method" />
+    <option name="LAST_COMMIT_MESSAGE" value="test data deleting dragged to @After method" />
   </component>
 </project>
